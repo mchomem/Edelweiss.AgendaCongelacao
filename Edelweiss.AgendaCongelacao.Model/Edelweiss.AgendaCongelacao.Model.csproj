@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B101238B-528B-439B-9933-677D7045182C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Edelweiss.AgendaCongelacao.Model</RootNamespace>
+    <AssemblyName>Edelweiss.AgendaCongelacao.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\Agenda.cs" />
+    <Compile Include="Repositories\AgendaRepository.cs" />
+    <Compile Include="Repositories\ConfiguracaoNotificacaoAgendaRepository.cs" />
+    <Compile Include="Dashboard\AgendasAno.cs" />
+    <Compile Include="Repositories\AgendasAnoRepository.cs" />
+    <Compile Include="DataBase.cs" />
+    <Compile Include="Repositories\EstadoAgendaRepository.cs" />
+    <Compile Include="Repositories\ICrud.cs" />
+    <Compile Include="Json\ReturnJSON.cs" />
+    <Compile Include="Entities\ConfiguracaoNotificacaoAgenda.cs" />
+    <Compile Include="Repositories\LogSmsAgendaRepository.cs" />
+    <Compile Include="Entities\MedicoExecucaoAgenda.cs" />
+    <Compile Include="Repositories\MedicoExecucaoAgendaRepository.cs" />
+    <Compile Include="Entities\NotificacaoAgenda.cs" />
+    <Compile Include="Entities\LogSmsAgenda.cs" />
+    <Compile Include="Repositories\NotificacaoAgendaRepository.cs" />
+    <Compile Include="SMS.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entities\EstadoAgenda.cs" />
+    <Compile Include="Entities\UnidadeTempoAgenda.cs" />
+    <Compile Include="Repositories\UnidadeTempoAgendaRepository.cs" />
+    <Compile Include="Entities\UsuarioAdministracaoAgenda.cs" />
+    <Compile Include="Repositories\UsuarioAdministracaoAgendaRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Edelweiss.Utils\Edelweiss.Utils.csproj">
+      <Project>{d8c51f39-e8d6-4f94-9c5d-9bcf595948c2}</Project>
+      <Name>Edelweiss.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

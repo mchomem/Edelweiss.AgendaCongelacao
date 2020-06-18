@@ -1,0 +1,73 @@
+﻿<%@ Master
+    Language="C#"
+    AutoEventWireup="true"
+    CodeBehind="Site.master.cs"
+    Inherits="Edelweiss.AgendaCongelacao.Site.Admin.Site" %>
+
+<%@ Register
+    Src="~/Admin/UserControl/Menu.ascx"
+    TagName="Menu"
+    TagPrefix="ucEdelweissAdmin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="Content/css/w3.css" />
+    <link rel="stylesheet" href="Content/fontawesome-free-5.10.2-web/css/all.css" />
+    <script src="Content/script/jquery-3.4.1.min.js"></script>
+    <script src="Content/script/jquery.mask.js"></script>
+    <script src="Content/script/chartjs/chart.js"></script>
+    <script src="Content/script/edelweiss/ui-component/dialog.js"></script>
+    <script src="Content/script/edelweiss/common/utils.js"></script>
+    <script src="Content/script/jquery.fullscreen.js"></script>
+    <title>Administração</title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="dialogContainer"></div>
+
+    <form id="form" runat="server">
+        <header class="w3-container w3-blue-gray w3-display-container">
+            <div class="w3-bar">
+                <a href="Home.aspx" class="w3-bar-item">
+                    <img src="Content/images/LogoHorizontal.png" height="30">
+                </a>
+                <div class="w3-bar-item">
+                    <h3 style="margin: 0px;">Administração - Agendamento de congelação</h3>
+                </div>
+                <div class="w3-bar-item w3-right">
+                    <asp:Button
+                        ID="btnSair"
+                        CssClass="w3-button w3-small w3-right w3-blue-gray w3-border"
+                        runat="server"
+                        Text="Sair"
+                        OnClick="btnSair_Click" />
+                </div>
+                <div class="w3-bar-item w3-right">
+                    <button class="w3-button w3-small w3-white w3-border w3-border-white" type="button">
+                        <div style="color: #607d8b">
+                            <i class="fas fa-user w3-margin-right"></i>
+                            <asp:Label ID="lblUsuarioLogado" runat="server"></asp:Label>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="w3-col s12 m3 l2">
+            <ucEdelweissAdmin:Menu ID="menuPrincipalAdmin" runat="server" />
+        </div>
+        <div class="w3-col s12 m9 l10">
+            <section id="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </section>
+        </div>
+    </form>
+</body>
+</html>

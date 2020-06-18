@@ -1,0 +1,67 @@
+﻿<%@ Master
+    Language="C#"
+    AutoEventWireup="true"
+    CodeBehind="Site.master.cs"
+    Inherits="Edelweiss.AgendaCongelacao.Site.Site" %>
+
+<%@ Register
+    Src="~/UserControl/Menu.ascx"
+    TagName="Menu"
+    TagPrefix="ucEdelweiss" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Agendamento de congelação</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Content/css/alertify.css" rel="stylesheet" />
+    <link href="Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="Content/css/datagrid.css" rel="stylesheet" />
+    <link href="Content/fontawesome-free-5.10.2-web/css/all.css" rel="stylesheet" />
+    <link rel="icon" href="Content/images/calendario-16x16.png" />
+
+    <script src="Content/script/alertify.js"></script>
+    <script src="Content/script/jquery-3.4.1.min.js"></script>
+    <script src="Content/script/popper.min.js"></script>
+    <script src="Content/script/bootstrap.js"></script>
+    <script src="Content/script/jquery.mask.js"></script>
+    <script src="Content/script/moment.js"></script>
+    <script src="Content/script/edelweiss/ui-component/dialog.js"></script>
+    <script src="Content/script/edelweiss/common/utils.js"></script>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a id="anchorHome" class="navbar-brand" href="#">
+            <img src="Content/images/calendario-32x32.png" />
+        </a>
+        <div class="navbar-nav">
+            <h2 class="text-white">Agendamento de congelação</h2>
+        </div>
+        <div class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+            <div class="float-right">
+                <a class="btn bg-white btn-sm" href="Admin/Default.aspx">Administração</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="dialogContainer"></div>
+
+    <form id="form" runat="server">
+        <div class="container-fluid">
+            <div class="row mt-3 mb-2">
+                <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                    <ucEdelweiss:Menu ID="menuPrincipal" runat="server" />
+                </div>
+                <div class="col">
+                    <section id="content">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

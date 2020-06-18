@@ -1,0 +1,57 @@
+footer {
+    height: 50px;
+    background-color: #f8f9fa;
+}
+
+#divCarregandoDados {
+	top: 100px;
+	left: 500px;
+	outline: none;
+	overflow: visible;
+	position: absolute;
+	z-index: 9999;
+}
+
+#divSalvandoDados {
+	top: 100px;
+	left: 500px;
+	outline: none;
+	overflow: visible;
+	position: absolute;
+	z-index: 99999;
+}
+
+#divConfirmacaoSolicitacao {
+	top: 5px !important;
+	left: 100px !important;
+	outline: none !important;
+	overflow: visible !important;
+	position: absolute !important;
+	z-index: 9999 !important;
+	width: 1000px !important;
+	height: 500px !important;
+}
+
+#divDetalheSolicitacaoMedica {
+	top: 80px !important;
+	left: 10px !important;
+	outline: none !important;
+	overflow: visible !important;
+	position: absolute !important;
+	z-index: 9999 !important;
+	width: 1000px !important;
+	height: 305px !important;
+	background: #ffffff;
+}
+
+#divDetalheEntregaSolicitacaoMedica {
+	top: 15% !important;
+	left: 5% !important;
+	outline: none !important;
+	overflow: visible !important;
+	position: absolute !important;
+	z-index: 999 !important;
+	width: 1000px !important;
+	height: 305px !important;
+	background: #ffffff;
+}

@@ -1,0 +1,77 @@
+﻿
+/**********************************CSS GRIDVIEW************************************/
+.dataGrid {
+	background-color: #FFFFFF;
+	margin: 5px 0 10px 0;
+	border: solid 1px #154572;
+	color: #19334f;
+}
+
+	/*COLUNA*/
+	.dataGrid td {
+		padding: 4px 4px;
+		border: solid 1px #fff;
+		font-size: 12px;
+		font-family: Arial;
+		color: #000;
+	}
+
+	/*CABEÇALHO*/
+	.dataGrid th {
+		background: #154572;
+		color: #FFF;
+		font-weight: bold;
+		font-size: 12px;
+		height: 40px;
+		padding: 4px 4px;
+		text-align: center;
+	}
+
+		/*CABEÇALHO*/
+		.dataGrid th a {
+			color: #FFF;
+		}
+
+	/*LINKS*/
+	.dataGrid a {
+		color: #19334f;
+		text-decoration: none;
+	}
+
+	/*PAGINAÇÃO*/
+
+	.dataGrid span {
+		font-size: 12px;
+		color: #FFFFFF;
+		display: block;
+		padding: 2px 2px;
+		background: #0094ff;
+		margin-right: 1px;
+	}
+
+	.dataGrid td {
+		padding: 3px 3px 3px 3px !important;
+		font-weight: bold !important;
+	}
+
+	.dataGrid .pgr {
+		background: #154572;
+	}
+
+		.dataGrid .pgr table {
+			margin: 5px 0;
+		}
+
+		.dataGrid .pgr td {
+			border-width: 0 !important;
+			padding: 2px 2px 2px 2px !important;
+			border-left: solid 1px #666 !important;
+			font-weight: bold !important;
+			color: #fff !important;
+			line-height: 12px !important;
+		}
+
+		.dataGrid .pgr a {
+			color: #FFFFFF !important;
+			text-decoration: none !important;
+		}

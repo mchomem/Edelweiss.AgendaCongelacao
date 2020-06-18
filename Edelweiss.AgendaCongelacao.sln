@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edelweiss.AgendaCongelacao.Model", "Edelweiss.AgendaCongelacao.Model\Edelweiss.AgendaCongelacao.Model.csproj", "{B101238B-528B-439B-9933-677D7045182C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edelweiss.AgendaCongelacao.Site", "Edelweiss.AgendaCongelacao.Site\Edelweiss.AgendaCongelacao.Site.csproj", "{ED93DFBD-3CC9-4D09-9F86-5CCD8AC37C8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edelweiss.Utils", "Edelweiss.Utils\Edelweiss.Utils.csproj", "{D8C51F39-E8D6-4F94-9C5D-9BCF595948C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edelweiss.AgendaCongelacao.SMS.Services", "Edelweiss.AgendaCongelacao.SMS.Services\Edelweiss.AgendaCongelacao.SMS.Services.csproj", "{5F51C5AD-A278-42E3-AC68-9A70E3231B61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edelweiss.AgendaCongelacao.Notificador", "Edelweiss.AgendaCongelacao.Notificador\Edelweiss.AgendaCongelacao.Notificador.csproj", "{C0313F4D-AACB-4885-8D1A-33A2C91EACCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edelweiss.AgendaCongelacao.NotificadorEmail", "Edelweiss.AgendaCongelacao.NotificadorEmail\Edelweiss.AgendaCongelacao.NotificadorEmail.csproj", "{6E28E0BE-B115-434C-B118-51A6BC911FF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B101238B-528B-439B-9933-677D7045182C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B101238B-528B-439B-9933-677D7045182C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B101238B-528B-439B-9933-677D7045182C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B101238B-528B-439B-9933-677D7045182C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED93DFBD-3CC9-4D09-9F86-5CCD8AC37C8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED93DFBD-3CC9-4D09-9F86-5CCD8AC37C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED93DFBD-3CC9-4D09-9F86-5CCD8AC37C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED93DFBD-3CC9-4D09-9F86-5CCD8AC37C8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8C51F39-E8D6-4F94-9C5D-9BCF595948C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8C51F39-E8D6-4F94-9C5D-9BCF595948C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8C51F39-E8D6-4F94-9C5D-9BCF595948C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8C51F39-E8D6-4F94-9C5D-9BCF595948C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F51C5AD-A278-42E3-AC68-9A70E3231B61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F51C5AD-A278-42E3-AC68-9A70E3231B61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F51C5AD-A278-42E3-AC68-9A70E3231B61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F51C5AD-A278-42E3-AC68-9A70E3231B61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0313F4D-AACB-4885-8D1A-33A2C91EACCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0313F4D-AACB-4885-8D1A-33A2C91EACCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0313F4D-AACB-4885-8D1A-33A2C91EACCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0313F4D-AACB-4885-8D1A-33A2C91EACCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E28E0BE-B115-434C-B118-51A6BC911FF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E28E0BE-B115-434C-B118-51A6BC911FF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E28E0BE-B115-434C-B118-51A6BC911FF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E28E0BE-B115-434C-B118-51A6BC911FF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72247E49-BAEB-4EBB-87B2-BDD86B55EF9A}
+	EndGlobalSection
+EndGlobal

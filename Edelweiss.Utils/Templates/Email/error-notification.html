@@ -1,0 +1,58 @@
+﻿<body style="background-color: #f5f5f5;font-family:sans-serif;">
+    <div id="container" style="max-width:600px; margin:auto; border: 1px solid #dfdfdf;">
+        <div id="header" style="background-color:#dc3545;">
+            <h3 style="color:#ffffff; text-align:center; padding-top:10px; padding-bottom:10px; margin:0px;">{{subject}}</h3>
+        </div>
+        <div id="body" style="background-color:#ffe6e6; padding:10px;">
+            <p>Uma exceção foi disparada </p>
+            <table style="border-collapse:collapse; border-width:1px; border-style: solid; border-color:#000000; margin-top:40px; width:100%;">
+                <thead>
+                    <tr>
+                        <th colspan="2" style="border-width:1px; border-bottom-style: solid;">
+                            Detalhes
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding-left:5px; width:100px;">Date/time</td>
+                        <td>{{date-time}}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left:5px; width:100px;">Hostname</td>
+                        <td>{{hostname}}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left:5px;">Source</td>
+                        <td>{{source}}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left:5px;">Message</td>
+                        <td>{{message}}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left:5px;">InnerException</td>
+                        <td>{{inner-exception}}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-left:5px;">StackTrace</td>
+                        <td>{{stack-trace}}</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+            <div style="border-width:1px; border-style: solid; border-color:#f5c6cb; background-color:#f8d7da; color:#721c24; margin-top:40px;">
+                <p style="font-size:12px; text-align:center;">
+                    <b style="padding-right:10px;">OBS:</b>Sugestões do Stackoverflow
+                    <a href="https://stackoverflow.com/search?q={{message}}" target="_blank">aqui</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div style="max-width:600px; margin: 20px auto; font-size:12px;">
+        <center>
+            <b>E-mail automático, por favor não responda.</b>
+        </center>
+    </div>
+</body>
