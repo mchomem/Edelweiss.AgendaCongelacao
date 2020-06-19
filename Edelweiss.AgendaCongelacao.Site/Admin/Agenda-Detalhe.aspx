@@ -352,7 +352,7 @@
                                                         ID="lkbDetalhe"
                                                         runat="server"
                                                         CommandName="Detalhe"
-                                                        CommandArgument="<%# ((Edelweiss.AgendaCongelacao.Model.LogSmsAgenda)Container.DataItem).LogSmsAgendaID %>"
+                                                        CommandArgument="<%# ((Edelweiss.AgendaCongelacao.Model.Entities.LogSmsAgenda)Container.DataItem).LogSmsAgendaID %>"
                                                         ToolTip="Detalhe">
                                                         <i class="fas fa-eye fa-lg" style="color:darkslategray;"></i>
                                                     </asp:LinkButton>
