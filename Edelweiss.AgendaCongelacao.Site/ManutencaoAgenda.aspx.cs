@@ -83,10 +83,6 @@ namespace Edelweiss.AgendaCongelacao.Site
                 this.ddlMedicoExecucaoAgenda.DataTextField = "Nome";
                 this.ddlMedicoExecucaoAgenda.DataBind();
                 this.ddlMedicoExecucaoAgenda.Items.Insert(0, new ListItem("Selecione", "0"));
-
-                // Quanto houverem mais médicos executores de agenda, remover as duas linhas abaixo.
-                this.ddlMedicoExecucaoAgenda.Enabled = false;
-                this.ddlMedicoExecucaoAgenda.SelectedIndex = 1;
             }
             catch (Exception e)
             {
