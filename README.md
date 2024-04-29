@@ -26,6 +26,6 @@ Images:
 
 ![Aplicação - Agendamentos do dia](/Docs/Images/4-app-agendamentos-do-dia.png)
 
-![Aplicação - Agendamento](/Docs/Images/5-app-formulario-agendamento)
+![Aplicação - Agendamento](/Docs/Images/5-app-formulario-agendamento.png)
 
 ![Aplicação - Controle de agendamento](/Docs/Images/6-app-agendamentos.png)
